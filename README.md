@@ -112,6 +112,62 @@ Then convert from PDF to .md
 python local_pdf_example.py sample.pdf
 ```
 
+## Docling Server
+
+
+### API Server
+
+```
+pip install docling-serve
+```
+
+```
+export DOCLING_MODELS_DIR="/Users/bsutter/ai-projects/docling-tutorial/docling_models"
+```
+
+```
+docling-serve run
+```
+
+```
+open http://127.0.0.1:5001/docs
+```
+
+```
+curl -X 'POST' \
+  'http://localhost:5001/v1alpha/convert/source' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "http_sources": [{"url": "https://arxiv.org/pdf/2501.17887"}]
+  }'
+```
+
+### GUI
+
+Stop the API server (control-c)
+
+```
+pip install "docling-serve[ui]"
+```
+
+```
+docling-serve run --enable-ui
+```
+
+```
+open http://127.0.0.1:5001/ui
+```
+
+And try some of the sample PDFs
+
+![docling serve GUI 1](./screenshots/docling-serve-gui-1.png)
+
+![docling serve GUI 2](./screenshots/docling-serve-gui-2.png)
+
+![docling serve GUI 3](./screenshots/docling-serve-gui-3.png)
+
+
 ## Resources
 
 - [Docling GitHub Repository](https://github.com/docling-project/docling)

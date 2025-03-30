@@ -1,0 +1,36 @@
+# Sample Document for Docling
+
+This is a sample text document that you can convert to PDF for testing Docling.
+
+## Section 1: Introduction
+
+Docling is a powerful document processing tool that simplifies parsing diverse formats and provides seamless integrations with the gen AI ecosystem.
+
+## Section 2: Features
+
+- PDF parsing
+- Markdown conversion
+- Table extraction
+- Image processing
+
+## Section 3: Example Table
+
+| Feature | Description |
+|---------|-------------|
+| PDF parsing | Extract text and structure from PDF documents |
+| Markdown conversion | Convert documents to markdown format |
+| Table extraction | Identify and extract tables from documents |
+| Image processing | Process and analyze images within documents |
+
+## Section 4: Conclusion
+
+This sample document demonstrates how Docling can convert a simple PDF to markdown, preserving headings, lists, and tables.
+
+---
+
+Instructions:
+1. To convert this text file to PDF, you can use various tools:
+   - Print to PDF from a text editor
+   - Use online converters
+   - Use command-line tools like pandoc: `pandoc sample_text.txt -o sample.pdf`
+2. Once you have the PDF, you can use it with the Docling examples.

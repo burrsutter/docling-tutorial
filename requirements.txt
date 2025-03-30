@@ -1,0 +1,2 @@
+# Required packages for the Docling Hello World example
+docling>=2.28.4

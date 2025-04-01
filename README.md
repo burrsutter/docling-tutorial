@@ -56,11 +56,11 @@ python local_pdf_example.py sample-pdfs/sales-summary.pdf
 ```
 
 
-If no path is provided, it will look for a file named `sample.pdf` in the current directory.
+If no path is provided, it will look for a file named `sample.pdf` in the `sample-pdfs` directory.
 
 ### 3. CLI Example
 
-Docling also provides a convenient command-line interface. The `cli_example.sh` script demonstrates how to use it:
+Docling also provides a convenient command-line interface. 
 
 ```bash
 # Basic usage
@@ -69,48 +69,81 @@ docling https://arxiv.org/pdf/2408.09869
 
 # Using SmolDocling VLM (if available)
 docling --pipeline vlm --vlm-model smoldocling https://arxiv.org/pdf/2408.09869 
+```
 
-docling --pipeline vlm --vlm-model smoldocling https://arxiv.org/pdf/2206.01062
+#### docling cli examples
+
+##### With output folder
+
+```
+mkdir -p output/zippity-zoo
+docling ./sample-pdfs/Zippity_Zoo.pdf --output output/zippity-zoo/
+```
+
+##### Embedded chart
+
+```
+mkdir -p output/global_sales
+docling ./sample-pdfs/Global_Sales_Performance_Overview_2024.pdf --image-export-mode referenced --output output/global_sales/
+```
+
+
+##### Embedded table
+
+```
+mkdir -p output/product_revenue
+docling ./sample-pdfs/Product_Revenue_FY2024.pdf --image-export-mode referenced --output output/product_revenue/
+
+mkdir -p output/weekly_time_sheet
+docling ./sample-pdfs/Weekly_time_sheet.pdf --image-export-mode referenced --output output/weekly_time_sheet/
+
+mkdir -p output/invoice_1
+docling ./sample-pdfs/Invoice-1.pdf --image-export-mode referenced --output output/invoice_1/
+
+```
+
+
+##### Images and charts
+
+```
+mkdir -p output/census
+docling https://www.census.gov/content/dam/Census/library/publications/2023/demo/p60-279.pdf --image-export-mode referenced --output output/census/
+
+mkdir -p output/pew_ai_workers
+docling https://www.pewresearch.org/wp-content/uploads/sites/20/2025/02/ST_2025.2.25_AI-Workers_REPORT.pdf --image-export-mode referenced --output output/pew_ai_workers/
+
+mkdir -p output/pew_life_stages
+docling https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/pg_2025.03.19_life-stages_report.pdf --image-export-mode referenced --output output/pew_life_stages
+
+```
+
+For Mac-users
+
+```
+pip install mlx-vlm
+```
+
+```
+pip show docling
+Name: docling
+Version: 2.28.4
+Summary: SDK and CLI for parsing PDF, DOCX, HTML, and more, to a unified document representation for powering downstream workflows such as gen AI applications.
+Home-page: https://github.com/docling-project/docling
+Author: Christoph Auer
+Author-email: cau@zurich.ibm.com
+License: MIT
+Location: /Users/bsutter/ai-projects/docling-tutorial/venv/lib/python3.11/site-packages
+Requires: beautifulsoup4, certifi, docling-core, docling-ibm-models, docling-parse, easyocr, filetype, huggingface_hub, lxml, marko, openpyxl, pandas, pillow, pluggy, pydantic, pydantic-settings, pylatexenc, pypdfium2, python-docx, python-pptx, requests, rtree, scipy, tqdm, typer
+Required-by:
+```
+
+```
+mkdir -p output/produce_revenue_vlm
+docling --pipeline vlm --vlm-model smoldocling --output output/produce_revenue_vlm/ ./sample-pdfs/Product_Revenue_FY2024.pdf
 ```
 
 For more details, check out the [advanced usage options](https://github.com/docling-project/docling) in the official documentation.
 
-### 4. Text to PDF
-
-```bash
-brew install pandoc
-brew install basictex
-export PATH="/Library/TeX/texbin:$PATH"
-```
-
-```bash
-pdflatex --version
-```
-
-```
-pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2025)
-kpathsea version 6.4.1
-Copyright 2025 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.46; using libpng 1.6.46
-Compiled with zlib 1.3.1; using zlib 1.3.1
-Compiled with xpdf version 4.04
-```
-
-```bash
-pandoc sample_text.txt -o sample.pdf
-```
-
-Then convert from PDF to .md
-
-```bash
-python local_pdf_example.py sample.pdf
-```
 
 ## Docling Server
 
@@ -173,3 +206,19 @@ And try some of the sample PDFs
 - [Docling GitHub Repository](https://github.com/docling-project/docling)
 - [Detailed Installation Instructions](https://github.com/docling-project/docling)
 - [SmolDocling](https://github.com/docling-project/docling) - Visual Language Model for document understanding
+
+
+## Sources
+
+[Time Sheet](https://docs.google.com/spreadsheets/d/1QJm5bwmGWfZnQW7SWPZwc_bTEVbEdG08t0QaWZ2XQlA/edit?usp=sharing)
+
+[Product Revenue FY2024](https://docs.google.com/document/d/1du_ERpix9n_iGtor_fcUl1zXedIHmaAS8tPOoq502M0/edit?usp=sharing)
+
+[Product Revenue Table](https://docs.google.com/spreadsheets/d/1iNPSSMumosHNzcAqJpA9xDqhQgiGjYUVczNVEOBQpzE/edit?usp=sharing)
+
+[Global Sales](https://docs.google.com/document/d/19NVnuwdHQaU2QY3NcrEoLwFOQ0kn23cV6Xz6E5AuH4E/edit?usp=sharing)
+
+[Invoice](https://docs.google.com/spreadsheets/d/1Xiqdg_ZlnHIcZOLyPwnyBlPrklx2g6oCPfKWmnkd1gs/edit?usp=sharing)
+
+
+

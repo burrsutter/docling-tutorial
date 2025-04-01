@@ -45,7 +45,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         pdf_path = sys.argv[1]
     else:
-        pdf_path = "sample.pdf"  # Default local PDF file
+        pdf_path = "./sample-pdfs/sample.pdf"  # Default local PDF file
     
     # Set output path
     output_path = "local_output.md"

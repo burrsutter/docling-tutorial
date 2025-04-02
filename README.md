@@ -117,6 +117,25 @@ docling https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/pg_2025.
 
 ```
 
+##### Contracts
+```
+mkdir -p output/new_hampshire_contract
+docling https://www.das.nh.gov/purchasing/docs/Notice_Of_Contract_SIGNED/8002969%20Salesforce%20Professional%20Services%20rev.pdf --image-export-mode referenced --output output/new_hampshire_contract
+```
+
+```
+mkdir -p output/vermont_contract
+docling https://bgs.vermont.gov/sites/bgs/files/files/purchasing-contracting/C-two/38298%202-2.pdf --image-export-mode referenced --output output/vermont_contract
+```
+
+##### Survey Data
+
+```
+mkdir -p output/cncf_survey_24
+docling https://www.cncf.io/wp-content/uploads/2025/04/cncf_annual_survey24_031225a.pdf --image-export-mode referenced --output output/cncf_survey_24
+```
+
+
 For Mac-users
 
 ```

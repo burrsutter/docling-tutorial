@@ -1,29 +1,141 @@
-## Sample Document for Docling
+<!-- image -->
 
-This is a sample text document that you can convert to PDF for testing Docling.
+<!-- image -->
 
-## Section 1: Introduction
+<!-- image -->
 
-Docling is a powerful document processing tool that simplifies parsing diverse formats and provides seamless integrations with the gen AI ecosystem.
+<!-- image -->
 
-## Section 2: Features
+<!-- image -->
 
-- • PDF parsing
-- • Table extraction
-- • Markdown conversion
-- • Image processing
+<!-- image -->
 
-## Section 3: Example Table
+<!-- image -->
 
-| Feature             | Description                                   |
-|---------------------|-----------------------------------------------|
-| PDF parsing         | Extract text and structure from PDF documents |
-| Markdown conversion | Convert documents to markdown format          |
-| Table extraction    | Identify and extract tables from documents    |
-| Image processing    | Process and analyze images within documents   |
+<!-- image -->
 
-## Section 4: Conclusion
+<!-- image -->
 
-This sample document demonstrates how Docling can convert a simple PDF to markdown, preserving headings, lists, and tables.
+## NEW PATIENT INTAKE FORM
 
-Instructions: 1. To convert this text file to PDF, you can use various tools: -Print to PDF from a text editor - Use online converters - Use command-line tools like pandoc: pandoc sample\_text.txt -o sample.pdf 2. Once you have the PDF, you can use it with the Docling examples.
+<!-- image -->
+
+## PLEASE PRINT AND  COMPLETE  ALL  ENTRIES
+
+FIRST NAME
+
+LAST NAME
+
+DATE OF BIRTH
+
+\_\_\_\_\_\_\_\_\_\_\_\_/\_\_\_\_\_\_\_\_\_\_\_\_/\_\_\_\_\_\_\_\_\_\_\_\_
+
+SEX
+
+❑
+
+Male
+
+❑ Female
+
+SOCIAL SECURITY
+
+PHONE NUMBER
+
+EMAIL ADDRESS
+
+ADDRESS
+
+CITY
+
+STATE
+
+ZIP CODE
+
+MARITAL STATUS
+
+❑ SINGLE
+
+❑ MARRIED
+
+SPOUSES NAME
+
+SPOUSE PHONE NUMBER
+
+EMERGENCY CONTACT
+
+RELATIONSHIP
+
+PHONE NUMBER
+
+## INSURANCE INFORMATION
+
+DO YOU HAVE INSURANCE?
+
+❑
+
+YES
+
+❑ NO
+
+PRIMARY CARD HOLDER
+
+❑
+
+SELF
+
+❑ SPOUSE. ❑ PARENT. ❑ OTHER\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+PRIMARY POLICY HOLDER NAME
+
+PRIMARY INSURANCE COMPANY
+
+PRIMARY ID NUMBER
+
+PRIMARY GROUP NUMBER
+
+DO YOU HAVE SECONDARY INSURANCE?
+
+❑ YES
+
+❑
+
+NO
+
+SECONDARY CARD HOLDER
+
+❑ SELF ❑ SPOUSE. ❑ PARENT. ❑ OTHER\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+SECONDARY POLICY HOLDER NAME
+
+SECONDARY INSURANCE COMPANY
+
+SECONDARY ID NUMBER
+
+SECONDARY GROUP NUMBER
+
+## PAYMENT POLICIES
+
+● You are financially responsible for anything insurance does not cover. All copays are due and payable at each visit. The amount your insurance will allow and pay for and your financial responsibility is determined by your insurance company and the policy you have chosen. Your claim will be processed according to the benefits of your insurance plan. The deductible, co-insurance and co-pay are your financial responsibility. It is your responsibility to understand your insurance plan.
+
+● $5 Fee for Co-pays not paid at the time of service.
+
+● $50 No Show Fee for any Missed Appointment that was not cancelled or rescheduled 24 hours prior to the appointment. Please be considerate and call at least 24 hours before your appointment if you cannot come in.
+
+● $35 NSF charge for any returned check from the bank.
+
+● If you are a private patient without insurance, all charges are due at the time of the visit. We do not send a statement to private pay patients.
+
+## PRESCRIPTION POLICY
+
+PHARMACY NAME
+
+PHARMACY PHONE NUMBER
+
+● Please do not wait until your last pill to call for a refill. There is a 72 hour turn around for prescription refills. If you have not seen the Physician in six months, the prescription will be Denied.
+
+PATIENT SIGNATURE
+
+DATE
+
+<!-- image -->

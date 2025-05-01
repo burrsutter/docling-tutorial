@@ -1,141 +1,31 @@
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-## NEW PATIENT INTAKE FORM
-
-<!-- image -->
-
-## PLEASE PRINT AND  COMPLETE  ALL  ENTRIES
-
-FIRST NAME
-
-LAST NAME
-
-DATE OF BIRTH
-
-\_\_\_\_\_\_\_\_\_\_\_\_/\_\_\_\_\_\_\_\_\_\_\_\_/\_\_\_\_\_\_\_\_\_\_\_\_
-
-SEX
-
-❑
-
-Male
-
-❑ Female
-
-SOCIAL SECURITY
-
-PHONE NUMBER
-
-EMAIL ADDRESS
-
-ADDRESS
-
-CITY
-
-STATE
-
-ZIP CODE
-
-MARITAL STATUS
-
-❑ SINGLE
-
-❑ MARRIED
-
-SPOUSES NAME
-
-SPOUSE PHONE NUMBER
-
-EMERGENCY CONTACT
-
-RELATIONSHIP
-
-PHONE NUMBER
-
-## INSURANCE INFORMATION
-
-DO YOU HAVE INSURANCE?
-
-❑
-
-YES
-
-❑ NO
-
-PRIMARY CARD HOLDER
-
-❑
-
-SELF
-
-❑ SPOUSE. ❑ PARENT. ❑ OTHER\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-PRIMARY POLICY HOLDER NAME
-
-PRIMARY INSURANCE COMPANY
-
-PRIMARY ID NUMBER
-
-PRIMARY GROUP NUMBER
-
-DO YOU HAVE SECONDARY INSURANCE?
-
-❑ YES
-
-❑
-
-NO
-
-SECONDARY CARD HOLDER
-
-❑ SELF ❑ SPOUSE. ❑ PARENT. ❑ OTHER\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-SECONDARY POLICY HOLDER NAME
-
-SECONDARY INSURANCE COMPANY
-
-SECONDARY ID NUMBER
-
-SECONDARY GROUP NUMBER
-
-## PAYMENT POLICIES
-
-● You are financially responsible for anything insurance does not cover. All copays are due and payable at each visit. The amount your insurance will allow and pay for and your financial responsibility is determined by your insurance company and the policy you have chosen. Your claim will be processed according to the benefits of your insurance plan. The deductible, co-insurance and co-pay are your financial responsibility. It is your responsibility to understand your insurance plan.
-
-● $5 Fee for Co-pays not paid at the time of service.
-
-● $50 No Show Fee for any Missed Appointment that was not cancelled or rescheduled 24 hours prior to the appointment. Please be considerate and call at least 24 hours before your appointment if you cannot come in.
-
-● $35 NSF charge for any returned check from the bank.
-
-● If you are a private patient without insurance, all charges are due at the time of the visit. We do not send a statement to private pay patients.
-
-## PRESCRIPTION POLICY
-
-PHARMACY NAME
-
-PHARMACY PHONE NUMBER
-
-● Please do not wait until your last pill to call for a refill. There is a 72 hour turn around for prescription refills. If you have not seen the Physician in six months, the prescription will be Denied.
-
-PATIENT SIGNATURE
-
-DATE
-
-<!-- image -->
+## The following is the raw sales output
+
+|   OrderID | OrderDate   | Customer       | Region   | Product   |   Quantity |   UnitPrice |   TotalSales |
+|-----------|-------------|----------------|----------|-----------|------------|-------------|--------------|
+|      1001 | 2025-01-05  | Acme Corp      | North    | Widget A  |         10 |        9.99 |        99.9  |
+|      1002 | 2025-01-06  | Global Inc     | South    | Widget B  |          5 |       19.99 |        99.95 |
+|      1003 | 2025-01-07  | Tech Solutions | East     | Gadget X  |          7 |       14.5  |       101.5  |
+|      1004 | 2025-01-08  | Innovate LLC   | West     | Widget A  |         12 |        9.99 |       119.88 |
+|      1005 | 2025-01-09  | Acme Corp      | North    | Gadget Y  |          3 |       29.99 |        89.97 |
+|      1006 | 2025-01-10  | Global Inc     | South    | Widget B  |          8 |       19.99 |       159.92 |
+|      1007 | 2025-01-11  | Tech Solutions | East     | Widget A  |         15 |        9.99 |       149.85 |
+|      1008 | 2025-01-12  | Innovate LLC   | West     | Gadget X  |          4 |       14.5  |        58    |
+|      1009 | 2025-01-13  | Acme Corp      | North    | Widget B  |          6 |       19.99 |       119.94 |
+|      1010 | 2025-01-14  | Global Inc     | South    | Gadget Y  |          2 |       29.99 |        59.98 |
+
+## By Customer
+
+|   OrderID | OrderDate   | Customer   | Region   | Product   |   Quantity |   UnitPrice |   TotalSales |
+|-----------|-------------|------------|----------|-----------|------------|-------------|--------------|
+|      1005 | 2025-01-09  | Acme Corp  | North    | Gadget Y  |          3 |       29.99 |        89.97 |
+|      1001 | 2025-01-05  | Acme Corp  | North    | Widget A  |         10 |        9.99 |        99.9  |
+|      1009 | 2025-01-13  | Acme Corp  | North    | Widget B  |          6 |       19.99 |       119.94 |
+|      1010 | 2025-01-14  | Global Inc | South    | Gadget Y  |          2 |       29.99 |        59.98 |
+|      1002 | 2025-01-06  | Global Inc | South    | Widget B  |          5 |       19.99 |        99.95 |
+
+|   1006 | 2025-01-10   | Global Inc     | South   | Widget B   |   8 |   19.99 |   159.92 |
+|--------|--------------|----------------|---------|------------|-----|---------|----------|
+|   1008 | 2025-01-12   | Innovate LLC   | West    | Gadget X   |   4 |   14.5  |    58    |
+|   1004 | 2025-01-08   | Innovate LLC   | West    | Widget A   |  12 |    9.99 |   119.88 |
+|   1003 | 2025-01-07   | Tech Solutions | East    | Gadget X   |   7 |   14.5  |   101.5  |
+|   1007 | 2025-01-11   | Tech Solutions | East    | Widget A   |  15 |    9.99 |   149.85 |
